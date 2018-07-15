@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-ruby",
-  "version": "0.12.0",
+  "version": "0.12.0.1",
   "description": "Ruby grammar for tree-sitter",
   "main": "index.js",
   "keywords": [
@@ -25,5 +25,5 @@
     "test": "tree-sitter test && script/parse-examples",
     "test-windows": "tree-sitter test"
   },
-  "repository": "https://github.com/tree-sitter/tree-sitter-ruby"
+  "repository": "https://github.com/wingrunr21/tree-sitter-ruby"
 }
