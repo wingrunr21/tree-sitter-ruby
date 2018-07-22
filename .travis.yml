@@ -24,9 +24,16 @@ addons:
 
 script:
   - npm test
-  - npm run prebuild
-  - npm run prebuild:upload -u ${PREBUILD_UPLOAD}
 
 branches:
   only:
     - prebuild_support_test
+    - /^v.*$/
+
+deploy:
+  provider: script
+  script: npm run prebuild && npm run prebuild:upload -u ${PREBUILD_UPLOAD}
+  skip_cleanup: true
+  on:
+    all_branches: true
+    tags: true
